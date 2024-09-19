@@ -20,7 +20,7 @@ app.get("/", async(req,res) => {
 });
 
 app.get("/Quarterbacks", async(req,res) => {
-    // Get a reference to the collection "Students"
+    // Get a reference to the collection "quarterbacks"
     const collectionRef = collection(db, "quarterbacks");
     // Get all docs from the collection
     const collectionSnap = await getDocs(collectionRef);
